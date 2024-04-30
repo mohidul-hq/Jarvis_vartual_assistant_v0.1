@@ -1,0 +1,11 @@
+This is vartual assiatant it's name is "jarvis" after to run 
+this program or code you give it first command "jarvis" to 
+activate this assiatant like wise "deactive jarvis" to deactive 
+the program.... if you want to change the few features in the code 
+you may change and make it more uesful... you also downlode it executable 
+or .exe file... and please give feedback to improve the code. It's have lots of 
+features to use more effectliye read code... 
+
+
+
+Thank you

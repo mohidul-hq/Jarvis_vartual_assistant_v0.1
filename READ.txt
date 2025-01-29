@@ -1,101 +1,74 @@
-README for Virtual Assistant Script
-Overview
-This script is a Python-based virtual assistant named Jarvis. It can perform various tasks such as voice commands, opening applications, sending emails, making WhatsApp calls, sending WhatsApp messages, and searching Wikipedia. It is equipped with text-to-speech and speech recognition capabilities for a hands-free, interactive experience.
+Jarvis - Python Virtual Assistant 🚀
 
-Features
-Voice-Based Interaction:
+📚 About the Project
+Jarvis is a Python-based virtual assistant that automates everyday tasks using voice commands, helping you stay productive.
 
-Jarvis listens to your commands and responds with voice output.
-Interactive greeting and assistance based on the time of day.
-Task Automation:
+🎯 Key Features
+🔊 Voice-Activated Commands: Talk to Jarvis for seamless task automation.
+📧 Email Automation: Send emails using voice commands.
+📱 WhatsApp Integration: Send messages and make voice/video calls.
+🌐 Web Navigation: Open YouTube, Google, and other websites.
+⏰ Time Queries: Get the current system time.
+🎵 Music Control: Play YouTube playlists.
+📖 Wikipedia Integration: Get instant knowledge summaries.
+🛠️ Tech Stack
+Programming Language: Python
+Libraries Used:
+pyttsx3, speech_recognition, wikipedia, pyautogui, psutil, smtplib, csv
+🧑‍💻 Getting Started
+1. Prerequisites
+Ensure you have the following installed:
 
-Opens websites like YouTube, Google, and StackOverflow.
-Plays music through a predefined YouTube playlist.
-Retrieves the current time.
-Application Management:
-
-Opens Visual Studio Code for programming.
-Email Support:
-
-Sends emails via Gmail using smtplib.
-WhatsApp Integration:
-
-Sends WhatsApp messages to contacts loaded from a CSV file.
-Makes WhatsApp voice or video calls.
-Wikipedia Search:
-
-Provides summaries of topics using wikipedia library.
-Window Management:
-
-Closes the second-to-last or all windows except the active one.
-Sleep Mode:
-
-Activates and deactivates based on voice commands.
-Dynamic Contact Management:
-
-Loads contacts from a CSV file for WhatsApp messaging and calls.
-Requirements
-Python Libraries
-Ensure the following Python libraries are installed:
-
-pyttsx3
-speech_recognition
-datetime
-wikipedia
-webbrowser
-os
-smtplib
-csv
-pyautogui
-time
-psutil
-You can install missing libraries using pip install <library_name>.
-
-Setup Instructions
-Clone or download the script to your system.
-Install all required libraries listed above.
-Save your contacts in a CSV file:
-Place the file at the location specified in the script (C:\\Users\\mohid\\OneDrive\\Desktop\\My all Codes\\Python Codes\\contacts.csv).
-The CSV should have two columns:
-Column 1: Contact Name
-Column 2: Phone Number
-Update your Gmail credentials in the sendEmail function:
-python
+Python 3.x
+PIP for package management
+2. Install Dependencies
+bash
 Copy
 Edit
-server.login('youremail@gmail.com', 'your-password')
-Update the path for the WhatsApp executable in the activate_whatsapp function:
-python
+pip install pyttsx3 speechrecognition wikipedia pyautogui psutil
+3. Clone the Repository
+bash
 Copy
 Edit
-whatsapp_path = r"C:\\Program Files\\WindowsApps\\...\\WhatsApp.exe"
-Usage
-Run the script:
-
+git clone https://github.com/your-username/jarvis-python-assistant.git
+cd jarvis-python-assistant
+4. Run the Assistant
 bash
 Copy
 Edit
 python jarvis.py
-Use the wake-up command "Jarvis" to activate.
+🎮 Usage
+Activate Jarvis by saying:
 
-Provide commands such as:
-
-"Tell me about Python programming."
+arduino
+Copy
+Edit
+"Jarvis"
+Available Commands:
+"Tell me about Python."
 "Open YouTube."
-"Send message to [contact name]."
-"Make a WhatsApp call to [contact name]."
-"Play music."
-"What's the time?"
-Put Jarvis to sleep by saying "Activate sleep mode".
+"What time is it?"
+"Send a WhatsApp message to John."
+"Deactivate Jarvis."
+🛡️ Security Notes
+Ensure that:
 
-Known Limitations
-The script currently only works with English (en-in) voice commands.
-Requires a stable internet connection for email, WhatsApp, and Wikipedia features.
-Coordinates for pyautogui functions may need adjustment based on screen resolution.
-Gmail credentials and paths must be manually configured.
-Future Improvements
-Add GUI for better user interaction.
-Enhance error handling for unsupported commands.
-Include more integrations like calendars and reminders.
-Disclaimer
-This script is a personal project and not intended for production use. Ensure that sensitive information such as email credentials is kept secure.
+Sensitive information, such as email credentials, is securely managed.
+You use appropriate API credentials for secure communication.
+🌟 Future Improvements
+🎨 Add GUI interface
+🗓️ Calendar and reminders
+📊 Data analytics integration
+🔒 Secure user data handling
+📜 License
+This project is licensed under the MIT License.
+
+🤝 Contributing
+Contributions are welcome! Feel free to open issues or submit pull requests.
+
+📬 Contact
+Created by Mohidul Haque
+
+✅ GitHub Preview Guidelines:
+Ensure you push all files, including README.md, CSV samples, and Python scripts.
+Replace placeholders like your-username and hosted image links

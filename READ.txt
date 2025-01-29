@@ -1,4 +1,0 @@
-Jarvis - Python Virtual Assistant 🚀
-Jarvis is a Python-based virtual assistant that automates everyday tasks using voice commands, helping you stay productive.
-
-

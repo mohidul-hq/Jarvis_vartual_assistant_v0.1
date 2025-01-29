@@ -1,11 +1,101 @@
-This is vartual assiatant it's name is "jarvis" after to run 
-this program or code you give it first command "jarvis" to 
-activate this assiatant like wise "deactive jarvis" to deactive 
-the program.... if you want to change the few features in the code 
-you may change and make it more uesful... you also downlode it executable 
-or .exe file... and please give feedback to improve the code. It's have lots of 
-features to use more effectliye read code... 
+README for Virtual Assistant Script
+Overview
+This script is a Python-based virtual assistant named Jarvis. It can perform various tasks such as voice commands, opening applications, sending emails, making WhatsApp calls, sending WhatsApp messages, and searching Wikipedia. It is equipped with text-to-speech and speech recognition capabilities for a hands-free, interactive experience.
 
+Features
+Voice-Based Interaction:
 
+Jarvis listens to your commands and responds with voice output.
+Interactive greeting and assistance based on the time of day.
+Task Automation:
 
-Thank you
+Opens websites like YouTube, Google, and StackOverflow.
+Plays music through a predefined YouTube playlist.
+Retrieves the current time.
+Application Management:
+
+Opens Visual Studio Code for programming.
+Email Support:
+
+Sends emails via Gmail using smtplib.
+WhatsApp Integration:
+
+Sends WhatsApp messages to contacts loaded from a CSV file.
+Makes WhatsApp voice or video calls.
+Wikipedia Search:
+
+Provides summaries of topics using wikipedia library.
+Window Management:
+
+Closes the second-to-last or all windows except the active one.
+Sleep Mode:
+
+Activates and deactivates based on voice commands.
+Dynamic Contact Management:
+
+Loads contacts from a CSV file for WhatsApp messaging and calls.
+Requirements
+Python Libraries
+Ensure the following Python libraries are installed:
+
+pyttsx3
+speech_recognition
+datetime
+wikipedia
+webbrowser
+os
+smtplib
+csv
+pyautogui
+time
+psutil
+You can install missing libraries using pip install <library_name>.
+
+Setup Instructions
+Clone or download the script to your system.
+Install all required libraries listed above.
+Save your contacts in a CSV file:
+Place the file at the location specified in the script (C:\\Users\\mohid\\OneDrive\\Desktop\\My all Codes\\Python Codes\\contacts.csv).
+The CSV should have two columns:
+Column 1: Contact Name
+Column 2: Phone Number
+Update your Gmail credentials in the sendEmail function:
+python
+Copy
+Edit
+server.login('youremail@gmail.com', 'your-password')
+Update the path for the WhatsApp executable in the activate_whatsapp function:
+python
+Copy
+Edit
+whatsapp_path = r"C:\\Program Files\\WindowsApps\\...\\WhatsApp.exe"
+Usage
+Run the script:
+
+bash
+Copy
+Edit
+python jarvis.py
+Use the wake-up command "Jarvis" to activate.
+
+Provide commands such as:
+
+"Tell me about Python programming."
+"Open YouTube."
+"Send message to [contact name]."
+"Make a WhatsApp call to [contact name]."
+"Play music."
+"What's the time?"
+Put Jarvis to sleep by saying "Activate sleep mode".
+
+Known Limitations
+The script currently only works with English (en-in) voice commands.
+Requires a stable internet connection for email, WhatsApp, and Wikipedia features.
+Coordinates for pyautogui functions may need adjustment based on screen resolution.
+Gmail credentials and paths must be manually configured.
+Future Improvements
+Add GUI for better user interaction.
+Enhance error handling for unsupported commands.
+Include more integrations like calendars and reminders.
+Disclaimer
+This script is a personal project and not intended for production use. Ensure that sensitive information such as email credentials is kept secure.
